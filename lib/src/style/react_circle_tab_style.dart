@@ -58,12 +58,16 @@ class ReactCircleTabStyle extends InnerBuilder {
               shape: BoxShape.circle,
               color: active ? activeColor : color,
               //forked, added shadow
-              boxShadow: active ? BoxShadow(
-                color: Color(0x331ACFF3),
-                blurRadius: 15,
-                offset: Offset(0, 10),
-                spreadRadius: 0,
-              )) : null,
+              boxShadow: active
+                  ? [
+                      BoxShadow(
+                        color: Color(0x331ACFF3),
+                        blurRadius: 15,
+                        offset: Offset(0, 10),
+                        spreadRadius: 0,
+                      )
+                    ]
+                  : null),
           child: BlendImageIcon(
             active ? item.activeIcon ?? item.icon : item.icon,
             size: style.activeIconSize,
