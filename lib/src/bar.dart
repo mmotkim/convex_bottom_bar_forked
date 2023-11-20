@@ -325,6 +325,7 @@ class ConvexAppBar extends StatefulWidget {
     double? cornerRadius,
     TabStyle? style,
     Curve? curve,
+    BoxShadow? circleShadow,
   }) {
     DefaultChipBuilder? chipBuilder;
     if (badge.isNotEmpty) {
@@ -358,6 +359,7 @@ class ConvexAppBar extends StatefulWidget {
       style: style,
       curve: curve,
       chipBuilder: chipBuilder,
+      circleShadow: circleShadow,
     );
   }
 
