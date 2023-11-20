@@ -98,7 +98,7 @@ class _State extends State<DefaultAppBarDemo>
   Color _barColor = Data.namedColors.first.color;
   Color _shadowColor = Data.namedColors.first.color;
   Gradient? _gradient = Data.gradients.first;
-  SampleBadge? _badge;
+  Badge? _badge;
   TabController? _tabController;
   TextDirection _textDirection = TextDirection.ltr;
 
@@ -269,7 +269,7 @@ class _State extends State<DefaultAppBarDemo>
     });
   }
 
-  void _onBadgeChanged(SampleBadge? value) {
+  void _onBadgeChanged(Badge? value) {
     setState(() {
       _badge = value;
     });

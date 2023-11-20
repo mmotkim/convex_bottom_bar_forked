@@ -16,14 +16,14 @@
 
 import 'package:flutter/material.dart';
 
-class SampleBadge {
+class Badge {
   final Color? color;
   final Color? badgeColor;
   final EdgeInsets? padding;
   final double? borderRadius;
   final String text;
 
-  const SampleBadge(
+  const Badge(
     this.text, {
     this.color,
     this.badgeColor,
