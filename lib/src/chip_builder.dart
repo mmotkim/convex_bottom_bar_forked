@@ -69,18 +69,15 @@ class DefaultChipBuilder extends ChipBuilder {
   Widget asBadge(dynamic chip) {
     if (chip is String) {
       return Positioned.fill(
-        child: Align(
-          alignment: Alignment.center,
-          child: Container(
-            margin: margin,
-            padding: padding,
-            decoration: BoxDecoration(
-              shape: BoxShape.rectangle,
-              color: badgeColor,
-              borderRadius: BorderRadius.circular(borderRadius),
-            ),
-            child: Text(chip, style: TextStyle(color: textColor, fontSize: 12)),
+        child: Container(
+          margin: margin,
+          padding: padding,
+          decoration: BoxDecoration(
+            shape: BoxShape.rectangle,
+            color: badgeColor,
+            borderRadius: BorderRadius.circular(borderRadius),
           ),
+          child: Text(chip, style: TextStyle(color: textColor, fontSize: 12)),
         ),
       );
     } else if (chip is IconData) {
